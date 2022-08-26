@@ -1,7 +1,11 @@
 public class test {
     public static void main(String[] args) {
-        String a= "0100";
-        a= a.replace('0', '2');
+        int a= 0;
+        a= 1;
+        out(a);
         System.out.println(a);
+    }
+    public static void out(int a) {
+        a= 10;
     }
 }
