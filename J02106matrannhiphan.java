@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 
-public class j02106matrannhiphan {
+public class J02106matrannhiphan {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         int n= sc.nextInt();
