@@ -6,8 +6,9 @@
 public class test {
 
     public static void main(String[] args)  {
-        double a= 1.5;
-        System.out.println((int) a);
+        String a= new String();
+        a+= "a"+ "\n"+ "ashbdf";
+        System.out.println(a);
     }
 }
 
