@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class J4006khaibaolopsinhvien {
+public class J04006khaibaolopsinhvien {
     public static void main(String[] args) {
         sv1 a= new sv1();
         a.input();

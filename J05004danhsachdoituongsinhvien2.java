@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * J5004danhsachdoituongsinhvien2
  */
-public class J5004danhsachdoituongsinhvien2 {
+public class J05004danhsachdoituongsinhvien2 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         int t= sc.nextInt();
