@@ -1,27 +1,22 @@
-// Java code to illustrate the containsKey() method
-import java.util.*;
-  
+import java.text.SimpleDateFormat;  
+import java.util.Date; 
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
+
 /**
  * test
  */
 public class test {
-    public static void main(String[] args)
-    {
-  
-        // Creating an empty Map
-        Map<Integer, String> map = new HashMap<Integer, String>();
-  
-        // Mapping string values to int keys
-        map.put(10, "Geeks");
-        map.put(15, "4");
-        map.put(20, "Geeks");
-        map.put(25, "Welcomes");
-        map.put(30, "You");
-  
-        // Displaying the Map
-        System.out.println("Initial Mappings are: " + map);
-        System.out.println(map.get(10));
+    public static void main(String[] args) throws Exception {
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH);
+        Date firstDate = sdf.parse("04/22/2020");
+        Date secondDate = sdf.parse("04/27/2020");
+
+        long diff = secondDate.getTime() - firstDate.getTime();
+
+        TimeUnit time = TimeUnit.DAYS; 
+        long diffrence = time.convert(diff, TimeUnit.MILLISECONDS);
+        System.out.println("The difference in days is : "+diffrence);
 
     }
 }
-
