@@ -8,9 +8,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class test {
     public static void main(String[] args) throws Exception {
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH);
-        Date firstDate = sdf.parse("04/22/2020");
-        Date secondDate = sdf.parse("04/27/2020");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
+        String a= "22/04/2020";
+        String b= "27/04/2020";
+        Date firstDate = sdf.parse(a);
+        Date secondDate = sdf.parse(b);
 
         long diff = secondDate.getTime() - firstDate.getTime();
 
