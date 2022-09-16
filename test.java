@@ -1,24 +1,20 @@
-import java.text.SimpleDateFormat;  
-import java.util.Date; 
-import java.util.Locale;
-import java.util.concurrent.TimeUnit;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
+/**
+ * J07010danhsachsinhvientrongfile2
+ */
 /**
  * test
  */
 public class test {
-    public static void main(String[] args) throws Exception {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH);
-        String a= "22/04/2020";
-        String b= "27/04/2020";
-        Date firstDate = sdf.parse(a);
-        Date secondDate = sdf.parse(b);
 
-        long diff = secondDate.getTime() - firstDate.getTime();
-
-        TimeUnit time = TimeUnit.DAYS; 
-        long diffrence = time.convert(diff, TimeUnit.MILLISECONDS);
-        System.out.println("The difference in days is : "+diffrence);
-
+    public static void main(String[] args) throws FileNotFoundException {
+        File file= new File("SV.in");
+        Scanner sc= new Scanner(file);
+        while(sc.hasNext())
+        System.out.println(sc.nextLine());
+        
     }
 }
